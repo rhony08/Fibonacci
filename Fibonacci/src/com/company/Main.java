@@ -11,12 +11,14 @@ public class Main {
         System.out.print("Input : ");
         int x = scanner.nextInt();
         if (x > 0){
+            int sum = 0;
             for (int i = 0; i < x; i++) {
-                System.out.print(last + " ");
+                sum += last;
                 int temp = last;
                 last += first;
                 first = temp;
             }
+            System.out.print(sum + " ");
         }
     }
 }
